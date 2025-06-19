@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="purchasingvendor.css">
+</head>
+<body>
+
+    <header>
+        <div class="atas">
+            <div class="ecom">
+                <a href="purchasing_list.html">
+                    <button id="ecommerce" type="button">Kembali ke ERP</button>
+                </a>
+            </div>
+
+            <div class="wrapper">
+                <h1>Website B2B</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#cart">Keranjang (<span id="cart-count">0</span>)</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <section id="products">
+            <h2>Produk yang dijual</h2>
+            <div id="product-list" class="product-grid">
+                </div>
+        </section>
+
+        <section id="cart">
+            <h2>Keranjang Belanja Anda</h2>
+            <div id="cart-items">
+                <p id="empty-cart-message">Keranjang Anda kosong.</p>
+                </div>
+            <div class="cart-summary">
+                <p>Total: Rp <span id="cart-total">0</span></p>
+                <button id="checkout-btn" class="checkout-button" disabled>Checkout</button>
+                <button id="clear-cart-btn" class="clear-cart-button" disabled>Bersihkan Keranjang</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2025 Kayu Berkah. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <div id="invoiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Nota Pembelian</h2>
+            <div id="invoiceDetails">
+                </div>
+            <p class="print-note">Silakan cetak halaman ini jika Anda membutuhkan bukti pembelian.</p>
+            <button class="print-button" onclick="window.print()">Cetak Nota</button>
+        </div>
+    </div>
+
+    <script src="purchasingvendor.js"></script>
+</body>
+</html>

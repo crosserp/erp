@@ -1,0 +1,331 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-image: url(icon/pexels-pixabay-164572.jpg) ;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 200vh;
+    
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: .5px .5px 10px;
+    top:0;
+    z-index: 100;
+}
+
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+
+.ul-navbar {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.li-navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    padding: 20px;
+    color: black;
+    
+}
+.produk {
+    text-decoration: none;
+    color: black;
+}
+.li-navbar :hover{
+    color: #01386A;
+    transition: .5s ease-in-out;
+}
+
+
+
+.li-navbar p {
+    background-color: #01386A;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
+.login{
+    color: black;
+    text-decoration: none;
+}
+
+.erp {
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 800px;
+    height: 200px; 
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 40vh;
+    margin:auto;
+    margin-top: 200px;
+
+}
+.apa{
+    margin-bottom: 30px;
+}
+
+.tombol-utama {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #01386A;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tombol-utama:hover {
+    background-color: #0056b3;
+  }
+
+  .modul-1{
+    background-color: rgba(255, 255, 255, 0.788);
+    text-align: center;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    height: 300px; 
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .modul-2 {
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  #isi-modul {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+.atas-paket{
+    margin: auto;
+    margin-top: 100px;
+    background-color:rgba(255, 255, 255, 0.788) ;
+    width: 800px;
+    height: 300px; 
+    padding: 20px;
+    margin left: 100px;
+    margin right: 100;
+    padding:30px;
+}
+
+.langgan{
+    text-align: center;
+}
+.paket {
+    position:relative;
+    list-style-type: none;
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+#dasar{
+background-color:#01386A;
+color: #fff;
+padding: 30px;
+width: 150px;
+height: 150px;
+text-align: center;
+border-radius:10%;
+margin-top: 30px;
+margin right: 0px;
+margin-bottom: 100px;
+}
+
+.harga{
+    text-decoration: none;
+    color: black;
+}
+
+.paket-dasar{
+    margin-bottom: 10px;
+}
+.dasar-isi {
+    text-align: left;
+}
+
+.dasar-isi-harga{
+    margin-top: 30px;
+}
+
+.standar{
+    margin-top: 30px;
+    background-color:#01386A;
+    color: #fff;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius:10%;
+    margin-left: 30px;
+    margin right: 30px;
+}
+.paket-standar {
+    margin-bottom: 10px;
+}
+
+.isi-paket-standar{
+    
+    text-align: left;
+}
+
+.harga-standar{
+margin-top: 30px;
+}
+
+.premium {
+    margin-top: 30px;
+    background-color:#01386A;
+    color: #fff;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius:10%;
+    margin-left: 30px;
+}
+.paket-premium{
+    margin-bottom: 10px;
+}
+
+.isi-premium{
+    text-align: left;
+}
+
+.harga-premium{
+    margin-top:30px;
+}
+
+.keseluruhan{
+    display: flex;
+  justify-content: flex-end;
+}
+
+.img-container{
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+#tex {
+    position: absolute;
+  top: 30%; /* Posisi vertikal di tengah */
+  left: 30px; /*Posisi horizontal di tengah
+  transform: translate(-50%, -50%); /* Mengatasi offset karena posisi tengah */
+  /* background-color: rgba(0, 0, 0, 0.5); Warna latar belakang semi-transparan */
+  color: black; /* Warna teks */
+  padding: 10px; /* Padding di dalam overlay */
+}
+
+.isi-tex{
+    text-decoration: none;
+    color: black;
+}
+
+.isi-profesional{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.button{
+    background-color: #01386A;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.berdiskusi {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#ingintahu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.isi-ingintahu{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    position:relative;
+    list-style-type: none;
+    display: flex;
+  justify-content: center;
+  gap: 40px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.telepon a{
+    text-decoration: none;
+    color:black;
+}
+.mail a{
+    text-decoration: none;
+    color: black;
+}
+.ig a{
+text-decoration: none;
+color:black;
+}
+.map a{
+text-decoration: none;
+color: black;
+}

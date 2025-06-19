@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase Produk (Input)</title>
+    <!-- Link ke file CSS Anda -->
+    <link rel="stylesheet" href="manajemen_jual.css">
+    <!-- Mengatur font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Manajemen Produk Etalase</h1>
+        <div class="header-actions">
+            <button id="scrollToFormBtn" class="scroll-to-form-btn">Tambah Produk Baru</button>
+            <a href="manajemen_harga.html" class="view-products-btn">Lihat Produk</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Bagian Input Produk Baru -->
+        <section class="product-input-section" id="product-input-section">
+            <h2 class="section-title" id="form-title">Tambah Produk Baru</h2>
+            <form id="product-form" class="product-form">
+                <div class="form-group">
+                    <label for="productImageURL">URL Gambar Produk:</label>
+                    <input type="url" id="productImageURL" placeholder="Contoh: https://placehold.co/400x250/A3C6C4/2B4C4B?text=Gambar+Produk" required>
+                </div>
+                <div class="form-group">
+                    <label for="productName">Nama Produk:</label>
+                    <input type="text" id="productName" placeholder="Kursi Kayu Teras" required>
+                </div>
+                <div class="form-group">
+                    <label for="productCategory">Kategori:</label>
+                    <input type="text" id="productCategory" placeholder="Kursi" required>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Harga (Rp):</label>
+                    <input type="text" id="productPrice" placeholder="450.000" inputmode="numeric" pattern="[0-9.]*" required>
+                </div>
+                <!-- START: Penambahan Kuantitas dan Satuan -->
+                <div class="form-group">
+                    <label for="productQuantity">Kuantitas:</label>
+                    <input type="text" id="productQuantity" placeholder="10" inputmode="numeric" pattern="[0-9.]*" required>
+                </div>
+                <div class="form-group">
+                    <label for="productUnit">Satuan:</label>
+                    <input type="text" id="productUnit" placeholder="pcs / unit / set" required>
+                </div>
+                <!-- END: Penambahan Kuantitas dan Satuan -->
+                <div class="form-actions">
+                    <button type="submit" id="saveProductBtn" class="btn-primary">Simpan Produk</button>
+                    <button type="button" id="cancelEditBtn" class="btn-secondary hidden">Batal Edit</button>
+                    <div class="keluar">
+                        <a href="manajemen_harga.html"> keluar </a>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Kontainer tempat kartu produk akan dimuat oleh JavaScript (ini dihapus dari halaman ini) -->
+        <section class="products-listing" id="products-listing" aria-live="polite">
+            <!-- Kartu produk tidak lagi ditampilkan di sini -->
+        </section>
+
+        <p id="no-products-message" class="no-products-message hidden">Belum ada produk untuk ditampilkan.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Toko Kayu. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Link ke file JavaScript Anda -->
+    <script src="manajemen_jual.js"></script>
+</body>
+</html>

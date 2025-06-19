@@ -1,0 +1,149 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: .5px .5px 10px;
+    top:0;
+    z-index: 1000;
+    height: 79px;
+
+}
+
+.logo-i{
+    display: flex;
+    list-style: none;
+    gap: 1080px;
+}
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+#ic{
+    height: 45px;
+    width:45px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+/* CSS untuk Dropdown */
+.dropdown-logo {
+  display: none; /* Awalnya dropdown disembunyikan */
+  position: absolute; /* Diposisikan relatif terhadap list item */
+  background-color: #f9f9f960;
+  width: 60px;
+  height: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; Pastikan dropdown di atas elemen lain */
+  list-style: none; /* Hilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-logo li a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block; /* Membuat link memenuhi lebar list item */
+}
+
+.dropdown-logo li a:hover {
+  background-color: #f1f1f1;
+}
+
+.li-logo {
+  position: relative; /* Untuk memposisikan dropdown */
+  display: inline-block; /* Membuat list item sejajar */
+  cursor: pointer; /* Mengubah cursor menjadi pointer saat di hover */
+  text-align: center;
+  
+}
+
+li:hover .dropdown-logo {
+  display: block; /* Tampilkan dropdown saat di hover */
+}
+
+
+
+
+.login-container {
+    background: linear-gradient(to right, #01386A, #026ED0); /* Latar belakang putih untuk kotak login */
+    padding: 40px;
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum kotak login */
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+/* Judul formulir */
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Grup input (label + input) */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; /* Rata kiri untuk label dan input */
+}
+
+.input-group label {
+    display: block; /* Buat label berada di baris terpisah */
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 20px); /* Lebar input, kurangi padding */
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Pastikan padding termasuk dalam lebar */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff; /* Warna border saat input difokuskan */
+    outline: none; /* Hilangkan outline default browser */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Efek bayangan saat fokus */
+}
+
+/* Tombol login */
+.login-btn {
+   
+    background-color: #FFA500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+   color: #fff;
+    width: 100%; /* Tombol memenuhi lebar container */
+    margin-top: 10px;
+   
+}
+
+
+

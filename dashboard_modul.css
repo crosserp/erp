@@ -1,0 +1,197 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #01386A;
+}
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: fixed !important;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: .5px .5px 10px;
+    top:0;
+    z-index: 1000;
+    height: 79px;
+
+}
+
+
+
+.logo-i{
+    display: flex;
+    list-style: none;
+    gap: 1080px;
+}
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+#ic{
+    height: 45px;
+    width:45px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+/* CSS untuk Dropdown */
+.dropdown-logo {
+  display: none; /* Awalnya dropdown disembunyikan */
+  position: absolute; /* Diposisikan relatif terhadap list item */
+  background-color: #f9f9f960;
+  width: 60px;
+  height: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; Pastikan dropdown di atas elemen lain */
+  list-style: none; /* Hilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-logo li a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block; /* Membuat link memenuhi lebar list item */
+}
+
+.dropdown-logo li a:hover {
+  background-color: #f1f1f1;
+}
+
+.li-logo {
+  position: relative; /* Untuk memposisikan dropdown */
+  display: inline-block; /* Membuat list item sejajar */
+  cursor: pointer; /* Mengubah cursor menjadi pointer saat di hover */
+  text-align: center;
+  
+}
+
+li:hover .dropdown-logo {
+  display: block; /* Tampilkan dropdown saat di hover */
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    height: 100vh;
+    position: relative;
+}
+
+.isi-container{
+    background-color: #fff;
+    width: 200px;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+ 
+    margin-top: -120px;
+    z-index: 100;
+    margin-left: 0px;
+}
+
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    /* GANTI INI: Untuk membuat teks berada di kiri, gunakan `flex-start` */
+    justify-content: flex-start; /* Mengatur konten ke sisi kiri */
+    margin-left: 80px; /* Sesuaikan margin-left agar tidak tumpang tindih dengan logo */
+    padding-left: 0; /* Pastikan tidak ada padding default dari ul */
+}
+
+.li-navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    padding: 20px;
+    color: black;
+    
+}
+.produk {
+    text-decoration: none;
+    color: black;
+}
+.li-navbar :hover{
+    color: #01386A;
+    transition: .5s ease-in-out;
+}
+
+
+
+.li-navbar p {
+    background-color: #01386A;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+}
+
+/* Styling untuk semua tautan di dalam .navbar */
+.navbar a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: black; /* Mengatur warna teks menjadi hitam */
+}
+
+/* Jika Anda ingin mempertahankan warna hover yang sudah ada */
+.li-navbar :hover {
+    color: #01386A; /* Ini akan diterapkan saat mouse di atas li-navbar atau tautannya */
+    transition: .5s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #FFA500; /* Warna biru gelap yang Anda gunakan sebelumnya */
+    transition: color 0.3s ease-in-out; /* Menambahkan transisi halus pada perubahan warna */
+}
+
+
+.isi{
+    background-color: #f1f1f1c6;
+    width: 1000px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}

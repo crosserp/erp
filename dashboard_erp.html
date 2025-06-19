@@ -1,0 +1,282 @@
+<html>
+  <head><title>Dashboard ERP</title>
+  <link rel="stylesheet" href="dashboard_erp.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+ 
+  </head>
+<body>
+  <div class="logo">
+    <ul class="logo-i">
+      <li> <img src="icon/logo_cross-removebg-preview.png" alt="img"></li>
+      <li> <img src="icon/pexels-moose-photos-170195-1586996.jpg" id="ic">
+        <ul class="dropdown-logo">
+          <li class="li-logo"><a href="Dashboard.html" >Logout</a></li>
+          </ul>
+      </li>
+    </ul>
+    
+  </div>
+
+  <div class="container">
+    <ul class="isi-container">
+        <li class="dashboard"> <img src="icon/dashboard.png" alt="icon" width="40px" height="40px"><a class="dasherp" href="dashboard_erp.html">Dashboard</a></img>
+        </li>
+      <li class="perusahaan">
+      <img src="icon/building (1).png" alt="icon" width="40px" height="40px"><a class="perus">Perusahaan</a></img>
+      <ul class="dropdown">
+        <li><a href="organisasi.html" >Organisasi</a></li>
+        <li><a href="#" >Master Data</a>
+          <ul class="dropdown-nested">
+            <li><a href="jenis_usaha.html">Jenis Usaha</a></li>
+            <li><a href="data_akun.html">Data Akun Keuangan</a></li>
+            <li><a href="data_aset.html">Data Aset</a></li>
+            <li><a href="data_karyawan.html">Data Karyawan</a></li>
+            
+            <li><a href="data_mesin.html">Data Mesin</a></li>
+            <li><a href="data_rawmaterial.html">Data Raw Material</a></li>
+            <li><a href="data_produk.html">Data Produk</a></li>
+            <li><a href="data_supplier.html">Data Supplier</a></li>
+            <li><a href="data_Customer.html">Data Customer</a></li>
+            <li><a href="data_warehouse.html">Data Warehouse</a></li>
+            <li><a href="data_pabrik.html">Data Pabrik</a></li>
+        </ul>
+        </li>
+        </ul>
+    </li>
+
+    <li class="finance">
+      <img src="icon/financial-advisor (1).png" alt="icon" width="40px" height="40px"> <a class="fi">Finance </a></img>
+      <ul class="dropdown">
+        <li><a href="#" >Keuangan</a>
+        
+          <ul class="dropdown-nested">
+            <li><a href="keuangan.html#pencatatan_keuangan">Buku Besar</a></li>
+            <li><a href="#">Jurnal</a></li>
+            <li><a href="laba-rugi.html">Laporan Laba-Rugi</a></li>
+            <li><a href="arus-kas.html">Arus Kas</a></li>
+        </ul>
+        </li>
+
+        <li><a  href="#" >Hutang</a>
+          <ul class="dropdown-nested" id="nested-hutang">
+            <li><a href="data_supplier.html">Pemasok</a></li>
+            <li><a href="hutang-hutang.html">Hutang</a></li>
+          
+        </ul>
+        </li>
+
+        <li><a  href="#" >Piutang</a>
+        <ul class="dropdown-nested" id="nested-piutang">
+          <li><a href="data_customer.html">Pelanggan</a></li>
+          <li><a href="piutang-piutang.html">Piutang</a></li>
+      
+      </ul>
+    </li>
+
+        <li><a  href="#" >Aset</a>
+          <ul class="dropdown-nested" id="nested-aset">
+            <li><a href="aset.html">Aset Tetap</a></li>
+            <li><a href="asetperlokasi.html">Aset Perlokasi</a></li>
+        </ul>
+        </li>
+
+        <li><a  href="#" >Sales</a>
+          <ul class="dropdown-nested" id="nested-sales">
+            <li><a href="laporan_penjualan.html">Laporan Penjualan</a></li>
+        </ul>
+        </li>
+        <li><a  href="#" >Procurement</a>
+          <ul class="dropdown-nested" id="nested-procurement">
+            <li><a href="pengajuan_pengadaan.html">Pengajuan Pengadaan</a></li>
+        </ul>
+        </li>
+      </ul>
+    </li>  
+
+    <li class="sales">
+      <img src="icon/growth (2).png" alt="icon" width="40px" height="40px"><a class="s">Sales</a></img>
+      <ul class="dropdown">
+        <li><a href="#" >Sales Order</a>
+        
+          <ul class="dropdown-nested" id="nested-pesanan">
+            <li><a href="sales-order.html">Pesanan Penjualan</a></li>
+        </ul>
+    </li> 
+    <li><a href="#" >Penjualan</a>
+      <ul class="dropdown-nested" id="nested-penjualan">
+        <li><a href="transaksi_penjualan.html">Transaksi Penjualan</a></li>
+        <li><a href="manajemen_harga.html">Manajemen Harga</a></li>
+    </ul>
+  </li>
+  <li><a href="#" >Retur</a>
+    <ul class="dropdown-nested" id="nested-retur">
+      <li><a href="retur_barang.html">Retur Barang</a></li>
+  </ul>
+</li>
+<li><a href="#" >Forecasting</a>
+  <ul class="dropdown-nested" id="nested-forecasting">
+    <li><a href="#">Ramalan Permintaan</a></li>
+</ul>
+</li>
+  </ul>
+</li>
+
+    <li class="procurement">
+      <img src="icon/procurement (1).png" alt="icon" width="40px" height="40px"><a class="p">Procurement</a></img>
+      <ul class="dropdown">
+        <li><a href="permintaan_pengadaan.html">Permintaan Pengadaan </a></li>
+        <li><a href="purchasing_list.css" >Purchasing List</a></li>
+        <li><a href="rekap_retur.html" >Rekap retur</a></li>
+        <li><a href="levering_time.html" >Levering Time</a></li>
+        </ul>
+    </li> 
+
+    <li class="warehouse">
+      <img src="icon/warehouse (2).png" alt="icon" width="40px" height="40px"><a class="w">warehouse</a></img>
+      <ul class="dropdown">
+        <li><a href="#" >Permintaan Barang</a>
+          <ul class="dropdown-nested" id="nested-permintaan">
+           <li><a href="permintaan_barang.html">Pengiriman Barang</a></li>
+           <li><a href="pengajuan_raw.html">Pengajuan Raw Marerials</a></li>
+           <li><a href="pengajuan_goods.html">Pengajuan finished goods</a></li>
+       </ul>
+       </li>
+        <li><a href="#" >Lokasi</a>
+          <ul class="dropdown-nested" id="nested-lokasi">
+            <li><a href="finished_good.html">Finished Goods Warehouse</a></li>
+            <li><a href="raw_material.html">Raw Materials Warehouse</a></li>
+        </ul>
+        </li>
+        <li><a href="outbound.html" >Outbound</a></li>
+        <li><a href="truckin_out.html" >Truck in & truck out</a></li>
+        <li><a href="#" >Retur</a>
+          <ul class="dropdown-nested" id="nested-returi">
+            <li><a href="supplier_retur.html">supplier Return</a></li>
+            <li><a href="goods_retur.html">Sales Return</a></li>
+        </ul>
+        </li>
+        <li><a href="repacking.html" >Repacking</a></li>
+        <li><a href="stock_opname.html" >Penerimaan Barang</a></li>
+        </ul>
+
+    </li> 
+
+    <li class="production">
+      <img src="icon/factory (1).png" alt="icon" width="40px" height="40px"><a class="pr">Production</a></img>
+      <ul class="dropdown">
+        <li><a href="permintaan_produksi.html" >Permintaan produksi</a></li>
+        <li><a href="perencanaan_produksi.html" >Perencanaan produksi</a></li>
+        <li><a href="forecasting_produksi.html" >Forecasting</a></li>
+        <li><a href="mesin.html" >Mesin</a></li>
+        <li><a href="biaya.html" >Produksi</a></li>
+        </ul>
+
+    </li> 
+
+    <li class="human">
+      <img src="icon/teamwork (2).png" alt="icon" width="40px" height="40px"><a class="h">Human Resource</a></img>
+      <ul class="dropdown">
+        <li><a href="data_karyawan.html" >Divisi</a></li>
+        <li><a href="payroll.html" >Payroll</a></li>
+        <li><a href="recruiter.html" >Recruiter</a></li>
+        </ul>      
+    </li> 
+
+  
+    </ul>
+
+
+
+   
+   
+
+  <div class="dashboard-container">
+      <div class="main-content">
+          <div class="card sales-chart-card">
+              <h2>Sales</h2>
+              <canvas id="salesChart"></canvas>
+              <div class="period-display">Periode : 31 / 08 / 2024</div>
+          </div>
+
+          <div class="bottom-row">
+              <div class="card production-card">
+                  <h2>Produksi</h2>
+                  <div class="product-item">
+                      <span>Product A</span>
+                      <div class="progress-bar-container">
+                          <div class="progress-bar" style="width: 90%; background-color: #f7931e;">90%</div> </div>
+                  </div>
+                  <div class="product-item">
+                      <span>Product B</span>
+                      <div class="progress-bar-container">
+                          <div class="progress-bar" style="width: 80%; background-color: #f7931e;">80%</div>
+                      </div>
+                  </div>
+                  <div class="product-item">
+                      <span>Product C</span>
+                      <div class="progress-bar-container">
+                          <div class="progress-bar" style="width: 85%; background-color: #f7931e;">85%</div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card warehouse-map-card">
+                  <h2>Warehouse</h2>
+                  <div id="map" class="map-container"></div>
+              </div>
+          </div>
+      </div>
+
+      <div class="sidebar">
+          <div class="card forum-card">
+              <div class="forum-header">
+                  <h3>Forum Diskusi</h3>
+                  <button class="forum-button">
+                      <img src="https://cdn-icons-png.flaticon.com/512/32/32441.png" alt="Icon Diskusi" class="forum-icon-header"> </button>
+              </div>
+              <ul class="forum-list">
+                  <li class="forum-item">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1000/1000962.png" alt="Finance" class="forum-avatar"> <div class="forum-details">
+                          <h4>Finance</h4>
+                          <span class="status online">online</span>
+                      </div>
+                  </li>
+                  <li class="forum-item">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1000/1000962.png" alt="Sales" class="forum-avatar">
+                      <div class="forum-details">
+                          <h4>Sales</h4>
+                          <span class="status offline">offline</span>
+                      </div>
+                  </li>
+                  <li class="forum-item">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1000/1000962.png" alt="Procurement" class="forum-avatar">
+                      <div class="forum-details">
+                          <h4>Procurement</h4>
+                          <span class="status online">online</span>
+                      </div>
+                  </li>
+                  <li class="forum-item">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1000/1000962.png" alt="Inventory" class="forum-avatar">
+                      <div class="forum-details">
+                          <h4>Inventory</h4>
+                          <span class="status online">online</span>
+                      </div>
+                  </li>
+                  <li class="forum-item">
+                      <img src="https://cdn-icons-png.flaticon.com/512/1000/1000962.png" alt="Produksi" class="forum-avatar">
+                      <div class="forum-details">
+                          <h4>Produksi</h4>
+                          <span class="status online">online</span>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+<script src="dashboard_erp.js"></script>
+</body>
+</html>

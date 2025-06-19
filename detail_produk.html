@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .detail-container {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        .detail-container h2 {
+            color: #0056b3;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .detail-item {
+            margin-bottom: 15px;
+        }
+        .detail-item label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px; /* Lebar label untuk rata */
+            color: #555;
+        }
+        .detail-item span {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .back-button {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="detail-container">
+        <h2>Detail Produk</h2>
+        <div class="detail-item">
+            <label>Kode Produk:</label>
+            <span id="detail-kode-produk"></span>
+        </div>
+        <div class="detail-item">
+            <label>Nama Produk:</label>
+            <span id="detail-nama-produk"></span>
+        </div>
+        <div class="detail-item">
+            <label>Satuan Produk:</label>
+            <span id="detail-satuan-produk"></span>
+        </div>
+
+        <h3>Daftar Kebutuhan Raw Material</h3>
+        <table id="detailRawMaterialTable">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Raw Material</th>
+                    <th>Kuantitas</th>
+                    <th>Satuan</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+
+        <button class="back-button" onclick="history.back()">Kembali</button>
+    </div>
+
+    <script src="detail_produk.js"></script>
+</body>
+</html>

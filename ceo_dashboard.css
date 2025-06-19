@@ -1,0 +1,116 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #01386A;
+}
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: .5px .5px 10px;
+    top:0;
+    z-index: 100;
+    height: 79px;
+
+}
+
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+
+.container{
+    background-color: #fff;
+    width: 250px;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    position: absolute;
+    padding-left: 30px;
+}
+.perusahaan{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.perus{
+    margin-left: 30px;
+}
+
+.finance{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    align-items: center;
+    list-style: none;
+}
+
+.fi{
+    margin-left: 30px;
+}
+.sales{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.s{
+    margin-left: 30px;
+}
+.procurement{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold; 
+    list-style: none;  
+}
+.p{
+    margin-left: 30px;
+}
+.warehouse{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.w{
+    margin-left: 30px;
+}
+.production{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.pr{
+    margin-left: 30px;
+}
+.human{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.h{
+    margin-left: 30px;
+}
+.project{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}.pm{
+    margin-left: 30px;
+}

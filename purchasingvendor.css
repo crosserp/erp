@@ -1,0 +1,598 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper { /* Nama kelas diganti dari .container menjadi .wrapper */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: -50px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content */
+main {
+    padding-top: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.wrapper{
+    margin-top: 20px;
+}
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.product-info {
+    padding: 20px;
+    flex-grow: 1; /* Allow content to grow */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.4em;
+}
+
+.product-info .price {
+    font-size: 1.2em;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info .stock {
+    font-size: 0.95em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.product-card .add-to-cart {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Push button to bottom */
+}
+
+.product-card .add-to-cart:hover:not(:disabled) {
+    background-color: #27ae60;
+}
+
+.product-card .add-to-cart:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Cart Section */
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h4 {
+    margin: 0 0 5px 0;
+    color: #34495e;
+}
+
+.cart-item-details .price {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #e67e22;
+}
+
+.cart-item-quantity span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.remove-from-cart {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.remove-from-cart:hover {
+    background-color: #c0392b;
+}
+
+#empty-cart-message {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+.cart-summary {
+    text-align: right;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.cart-summary p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.checkout-button, .clear-cart-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover:not(:disabled), .clear-cart-button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.checkout-button:disabled, .clear-cart-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* Gaya untuk kontainer tombol */
+.ecom {
+    text-align: center; /* Untuk menengahkan tombol */
+    margin-left: 700px;
+   
+}
+
+/* Gaya untuk tombol itu sendiri */
+#ecommerce {
+    background-color: #f39c12; /* Warna oranye yang menarik */
+    color: white; /* Teks putih untuk kontras */
+    border: none; /* Menghilangkan border default */
+    padding: 12px 25px; /* Padding yang cukup untuk area klik */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 1.1em; /* Ukuran font yang mudah dibaca */
+    cursor: pointer; /* Menandakan bahwa tombol bisa diklik */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+    text-decoration: none; /* Penting jika tombol dibungkus oleh <a> */
+    display: inline-block; /* Agar padding dan margin berfungsi dengan baik */
+    margin-top: 30px;
+}
+
+/* Efek saat tombol di-hover */
+#ecommerce:hover {
+    background-color: #e67e22; /* Warna oranye sedikit lebih gelap saat di-hover */
+    transform: translateY(-2px); /* Efek sedikit terangkat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+/* Jika tombol dinonaktifkan (opsional) */
+#ecommerce:disabled {
+    background-color: #bdc3c7; /* Warna abu-abu saat dinonaktifkan */
+    cursor: not-allowed; /* Kursor tidak diizinkan */
+    transform: none; /* Menghilangkan efek terangkat */
+    box-shadow: none; /* Menghilangkan bayangan */
+}
+
+/* Gaya untuk kontainer paling atas */
+.atas {
+    background-color: #2c3e50; /* Warna latar belakang yang sama dengan header */
+    color: #fff; /* Warna teks putih */
+    position: fixed; /* Membuat div ini tetap di posisi tertentu saat di-scroll */
+    top: 0; /* Menempel di bagian paling atas viewport */
+    left: 0; /* Menempel di bagian paling kiri viewport */
+    width: 100%; /* Memenuhi lebar layar */
+    padding: 15px 0; /* Padding atas dan bawah, mirip dengan header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Bayangan lembut di bawahnya */
+    z-index: 1000; /* Memastikan div ini selalu di atas elemen lain */
+    /* margin-top: 100px;  --> Hati-hati dengan ini jika ingin menempel di atas */
+    /* Jika Anda ingin ada jarak dari atas browser, gunakan padding-top pada body atau margin-top pada elemen lain */
+    
+    display: flex; /* Menggunakan flexbox untuk penataan elemen di dalamnya */
+    justify-content: space-between; /* Menempatkan .ecom di kiri dan .wrapper di kanan */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    
+}
+
+/* Penyesuaian untuk .ecom di dalam .atas */
+.atas .ecom {
+    text-align: left; /* Mengatur tombol ke kiri */
+    margin: 0 20px; /* Jarak dari tepi kiri/kanan parent .atas */
+    padding: 0; /* Menghilangkan padding yang mungkin ada sebelumnya */
+}
+
+/* Penyesuaian untuk tombol di dalam .ecom */
+.atas .ecom #ecommerce {
+    background-color: #f39c12; /* Warna oranye */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Padding lebih kecil agar tidak terlalu besar */
+    border-radius: 4px;
+    font-size: 0.9em; /* Ukuran font sedikit lebih kecil */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.atas .ecom #ecommerce:hover {
+    background-color: #e67e22;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Penyesuaian untuk .wrapper di dalam .atas */
+.atas .wrapper {
+    width: auto; /* Menggunakan lebar sesuai konten, bukan 90% */
+    max-width: none; /* Menghilangkan batasan max-width sebelumnya */
+    margin: 0 20px; /* Jarak dari tepi kiri/kanan parent .atas */
+    padding: 0; /* Menghilangkan padding yang mungkin ada sebelumnya */
+    display: flex; /* Menggunakan flexbox untuk header utama */
+    justify-content: space-between; /* Untuk H1 dan Nav */
+    align-items: center;
+    flex-grow: 1; /* Memungkinkan wrapper mengambil sisa ruang */
+}
+
+/* Penyesuaian untuk h1 di dalam .atas .wrapper */
+.atas .wrapper h1 {
+    margin: 0;
+    font-size: 1.8em; /* Sesuaikan ukuran font jika perlu */
+}
+
+/* Penyesuaian untuk nav di dalam .atas .wrapper */
+.atas .wrapper nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.atas .wrapper nav ul li {
+    margin-left: 20px; /* Jarak antar item navigasi */
+}
+
+.atas .wrapper nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em; /* Ukuran font standar */
+    transition: color 0.3s ease;
+}
+
+.atas .wrapper nav ul li a:hover {
+    color: #f39c12;
+}
+
+#cart-count {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.7em; /* Sedikit lebih kecil agar proporsional di header kecil */
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px; /* Padding lebih kecil */
+    position: absolute;
+    top: -5px; /* Sesuaikan posisi */
+    right: -8px; /* Sesuaikan posisi */
+    min-width: 14px;
+    text-align: center;
+    line-height: 1;
+    border: 1px solid #fff;
+}
+
+/* Menambahkan padding ke body agar konten tidak tertutup oleh header fixed */
+body {
+    padding-top: 80px; /* Sesuaikan tinggi ini dengan total tinggi .atas + padding/margin yang Anda inginkan */
+}
+
+
+/* --- Modal Styles for Invoice --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top (higher than fixed header) */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add some padding around the modal */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* For vertical centering when not using flex */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more responsive */
+    max-width: 700px; /* Max width for readability */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative; /* Needed for close button positioning */
+    max-height: 90vh; /* Max height to allow scrolling if content is long */
+    overflow-y: auto; /* Enable scroll within modal content */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+#invoiceDetails p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+#invoiceDetails strong {
+    color: #34495e;
+}
+
+#invoiceDetails .invoice-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+#invoiceDetails .invoice-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+#invoiceDetails .invoice-total {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #e67e22;
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+}
+
+#invoiceDetails .invoice-supplier-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+#invoiceDetails .invoice-supplier-info h4 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.print-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #2980b9;
+}
+
+.print-note {
+    text-align: center;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Hide print note and button when printing */
+@media print {
+    body > *:not(.modal) {
+        display: none !important;
+    }
+    .modal {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background-color: transparent;
+        padding: 0;
+    }
+    .modal-content {
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        max-height: none;
+        overflow-y: visible;
+    }
+    .close-button, .print-button, .print-note {
+        display: none !important;
+    }
+    #invoiceDetails .invoice-supplier-info {
+        background-color: #fff; /* Ensure white background when printing */
+        border: 1px solid #ddd;
+    }
+}

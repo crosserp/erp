@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Forecasting Penjualan</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f0f2f5; color: #333; }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        h1, h2 { color: #2c3e50; text-align: center; margin-bottom: 25px; }
+        .section { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa; }
+        .section h3 { margin-top: 0; color: #495057; border-bottom: 1px dashed #ced4da; padding-bottom: 10px; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #555; }
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover { background-color: #0056b3; }
+        #forecastResultText {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .data-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .data-list li {
+            background-color: #e2e6ea;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        #chartContainer {
+            margin-top: 25px;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            background-color: #fcfcfc;
+            border-radius: 8px;
+            position: relative;
+            height: 400px;
+        }
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Forecasting Penjualan</h1>
+        <p>Gunakan metode Rata-rata Bergerak untuk memprediksi penjualan periode berikutnya.</p>
+
+        <div class="section">
+            <h3>Data Penjualan Historis (Simulasi)</h3>
+            <p>Data penjualan berikut akan digunakan untuk peramalan:</p>
+            <ul id="salesDataList" class="data-list">
+                </ul>
+        </div>
+
+        <div class="section">
+            <h3>Pengaturan Peramalan</h3>
+            <label for="movingAveragePeriod">Periode Rata-rata Bergerak (N):</label>
+            <input type="number" id="movingAveragePeriod" value="3" min="1">
+            <button id="forecastButton">Lakukan Peramalan & Tampilkan Grafik</button>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+
+        <div class="section" id="resultSection" style="display: none;">
+            <h2>Hasil Peramalan & Grafik</h2>
+            <div id="forecastResultText"></div>
+            <div id="chartContainer">
+                <canvas id="forecastChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="aset.js"></script>
+</body>
+</html>

@@ -1,0 +1,1117 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+.logo {
+    align-items: center;
+    margin-right: 50px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: .5px .5px 10px;
+    top:0;
+    z-index: 100;
+    height: 79px;
+
+}
+.dashboard {
+  display: inline-block;
+  position: relative;
+  cursor: pointer; /* Membuat elemen perusahaan terlihat clickable */
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.dashboard .dasherp { /* Gaya untuk elemen <a> di dalam .perusahaan */
+    /* display: flex; */
+    align-items: center; /* Vertically center icon and text */
+    text-decoration: none; /* menghilangkan garis bawah link */
+    color: #01386A; /* Warna teks */
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.dashboard img {
+  margin-right: 5px; /* Space between icon and text */
+}
+.logo-i{
+    display: flex;
+    list-style: none;
+    gap: 1080px;
+}
+.logo img {
+    height: 100px;
+    width:100;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -10px;
+}
+#ic{
+    height: 45px;
+    width:45px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+/* CSS untuk Dropdown */
+.dropdown-logo {
+  display: none; /* Awalnya dropdown disembunyikan */
+  position: absolute; /* Diposisikan relatif terhadap list item */
+  background-color: #f9f9f960;
+  width: 60px;
+  height: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; Pastikan dropdown di atas elemen lain */
+  list-style: none; /* Hilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-logo li a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block; /* Membuat link memenuhi lebar list item */
+}
+
+.dropdown-logo li a:hover {
+  background-color: #f1f1f1;
+}
+
+.li-logo {
+  position: relative; /* Untuk memposisikan dropdown */
+  display: inline-block; /* Membuat list item sejajar */
+  cursor: pointer; /* Mengubah cursor menjadi pointer saat di hover */
+  text-align: center;
+  
+}
+
+li:hover .dropdown-logo {
+  display: block; /* Tampilkan dropdown saat di hover */
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    height: 100vh;
+    position: relative;
+   
+}
+
+.isi-container{
+    background-color: #fff;
+    width: 200px;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/* CSS untuk dropdown */
+.perusahaan {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen perusahaan terlihat clickable */
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .perusahaan .perus { /* Gaya untuk elemen <a> di dalam .perusahaan */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      margin-left: 30px;
+      font-weight: bold;
+  }
+  
+  .perusahaan img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Tampilkan dropdown saat .perusahaan di-hover */
+  .perusahaan:hover .dropdown {
+    display: block;
+  }
+
+
+
+.finance {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen finance terlihat clickable */
+    margin-bottom: 30px;
+  }
+  
+  .finance .fi {
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      margin-left: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #01386A;
+      
+
+  }
+  
+  .finance img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-nested {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%; /* Nested dropdown di sebelah kanan dropdown utama */
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-nested li {
+      padding: 8px 16px;
+  }
+  
+  .dropdown-nested li:hover {
+      background-color: #ddd;
+  }
+  
+  /* Tampilkan dropdown saat .finance di-hover */
+  .finance:hover .dropdown {
+    display: block;
+  }
+  
+  /* Tampilkan nested dropdown saat li di dalam .dropdown di-hover */
+  .dropdown li:hover .dropdown-nested {
+    display: block;
+  }
+
+#nested-hutang{
+    margin-top: 40px;
+}
+#nested-piutang{
+    margin-top: 80px;
+}
+#nested-aset{
+    margin-top: 120px;
+}
+#nested-sales{
+    margin-top: 155px;
+}
+#nested-procurement{
+    margin-top: 175px;
+}
+
+#nested-pesanan{
+    margin-top: 230px;
+}
+#nested-penjualan{
+    margin-top: 230px;
+}
+#nested-returi{
+  margin-top: 150px;
+}
+
+#nested-forecasting{
+    margin-top: 230px;
+}
+
+
+
+
+.sales{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold;
+    list-style: none;
+}
+.s{
+    margin-left: 30px;
+}
+
+.sales {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen sales terlihat clickable */
+  }
+  
+  .sales .s { /* Gaya untuk elemen <a> di dalam .sales */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      margin-left: 30px;
+  }
+  
+  .sales img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: #01386A;
+      display: block; /* Memastikan link memenuhi lebar li */
+      margin-left: 30px;
+      font-weight: normal;
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-nested {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%; /* Nested dropdown di sebelah kanan dropdown utama */
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#nested-pesanan{
+    margin-top: 10px;
+}
+
+#nested-penjualan{
+    margin-top: 10px;
+}
+
+#nested-retur{
+    margin-top: 80px;
+}
+
+#nested-forecasting{
+    margin-top: 100px;
+}
+
+  .dropdown-nested li {
+      padding: 8px 16px;
+  }
+  
+  .dropdown-nested li:hover {
+      background-color: #ddd;
+      margin-top: 10px;
+  }
+  
+  /* Tampilkan dropdown saat .sales di-hover */
+  .sales:hover .dropdown {
+    display: block;
+  }
+  
+  /* Tampilkan nested dropdown saat li di dalam .dropdown di-hover */
+  .dropdown li:hover .dropdown-nested {
+    display: block;
+  }
+
+
+
+
+.procurement{
+    margin-bottom: 30px;
+    color: #01386A;
+    font-weight: bold; 
+    list-style: none;  
+}
+.p{
+    margin-left: 30px;
+}
+
+.procurement {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen procurement terlihat clickable */
+  }
+  
+  .procurement .p { /* Gaya untuk elemen <a> di dalam .procurement */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color:#01386A; /* Warna teks */
+  }
+  
+  .procurement img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Tampilkan dropdown saat .procurement di-hover */
+  .procurement:hover .dropdown {
+    display: block;
+  }
+  
+
+
+/* CSS untuk dropdown */
+.warehouse {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen warehouse terlihat clickable */
+    margin-bottom: 30px;
+  }
+  
+  .warehouse .w { /* Gaya untuk elemen <a> di dalam .warehouse */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      margin-left: 30px;
+      font-weight: bold;
+  }
+  
+  .warehouse img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Tampilkan dropdown saat .warehouse di-hover */
+  .warehouse:hover .dropdown {
+    display: block;
+  }
+
+
+/* CSS untuk dropdown */
+.production {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen production terlihat clickable */
+    margin-bottom: 30px;
+  }
+  
+  .production .pr { /* Gaya untuk elemen <a> di dalam .production */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      font-weight: bold;
+      margin-left: 30px;
+  }
+  
+  .production img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Tampilkan dropdown saat .production di-hover */
+  .production:hover .dropdown {
+    display: block;
+  }
+
+
+/* CSS untuk dropdown */
+.human {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen human terlihat clickable */
+    margin-bottom: 30px;
+  }
+  
+  .human .h { /* Gaya untuk elemen <a> di dalam .human */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      margin-left: 30px;
+      font-weight: bold;
+      font-size: 15;
+
+  }
+  
+  .human img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Tampilkan dropdown saat .human di-hover */
+  .human:hover .dropdown {
+    display: block;
+  }
+
+/* CSS untuk dropdown */
+.project {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; /* Membuat elemen project terlihat clickable */
+    margin-bottom: 30px;
+  }
+  
+  .project .pm { /* Gaya untuk elemen <a> di dalam .project */
+      /* display: flex; */
+      align-items: center; /* Vertically center icon and text */
+      text-decoration: none; /* menghilangkan garis bawah link */
+      color: #01386A; /* Warna teks */
+      font-weight: bold;
+      margin-left: 30px;
+      font-size: 12px;
+  }
+  
+  .project img {
+      margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .dropdown {
+    display: none; /* Awalnya dropdown tersembunyi */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* menghilangkan bullet */
+    padding: 0; /* menghilangkan padding */
+    margin: 0; /* menghilangkan margin */
+  }
+  
+  .dropdown li {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a {
+      text-decoration: none;
+      color: black;
+      display: block; /* Memastikan link memenuhi lebar li */
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Tampilkan dropdown saat .project di-hover */
+  .project:hover .dropdown {
+    display: block;
+  }
+
+
+
+
+
+
+.atas{
+    position: fixed;
+    top: 90px !important; /* Jarak dari navbar */
+    left: 250px; /* Menyesuaikan dengan sidebar */
+    width: calc(100% - 250px); /* Supaya tabel tidak melebar ke sidebar */
+    display: flex;
+    /* justify-content: flex-start; */
+    padding: 20px;
+  justify-content: center;
+  gap: 120px;
+  height: 100px;
+  width:961px;
+  margin-right: 100px;
+}
+
+
+
+.pu{
+    margin-right: 100px;
+  margin-top: 100px;
+    background-color: #01386A;
+    width:992px;
+   
+    height: 50px;
+    border-top-left-radius: 10px;
+  /* border-top-right-radius: 10px; */
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+   /* z-index: 1; */
+    margin-left: 250px;
+  margin-bottom: 40px;
+    position: fixed;
+    padding-left: 10px;
+    padding-top: 10px;
+   
+    
+}
+
+.input-group{
+    background-color: #fff;
+    position: fixed;
+    left: 250px; /* Menyesuaikan dengan sidebar */
+    width: calc(100% - 250px); /* Supaya tabel tidak melebar ke sidebar */
+    padding: 20px;
+  justify-content: center;
+  height: 400px;
+  width:961px;
+  margin-right: 100px;
+  margin-top: 160px;
+  overflow-y: auto;
+  
+}
+
+
+
+
+
+
+.input-group label {
+    /* display: block; */
+    margin-bottom: 5px;
+    
+    
+  }
+  
+  .input-group input {
+    display: flex; /* Menggunakan flexbox untuk tata letak yang lebih baik */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk pemisahan */
+   
+  }
+  
+  .input-group small {
+    color: #888;
+    
+  }
+
+
+  #tipe{
+    width: 230px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 40px;
+    background-color: #EAEAEA;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block; /* Atau display: block; */
+  
+  }
+
+ .label-tipe{
+    margin-right: 10px; /* Memberi jarak antara label dan span */
+    width: 150px; /* Lebar label yang tetap */
+    text-align: left; /* Teks rata kiri */
+ }
+ #bidangUsaha{
+   
+     margin-bottom: 10px;
+     margin-left: 90px;
+     margin-right: 40px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+     width: 230px;
+   
+   }
+ 
+  .label-usaha{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  
+  #jenisPerusahaan{
+    width: 230px;
+     margin-bottom: 10px;
+     margin-left: 50px;
+     margin-right: 40px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+ 
+  .label-jenis{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  #alamatPerusahaan{
+    width: 230px;
+     margin-bottom: 10px;
+     margin-left: 42px;
+     margin-right: 40px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+ 
+  .label-alamat{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  #noTelepon{
+    width: 230px;
+     margin-bottom: 10px;
+     margin-left: 100px;
+     margin-right: 40px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+ 
+  .label-telepon{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  #npwp{
+    width: 230px;
+     margin-bottom: 10px;
+     margin-left: 135px;
+     margin-right: 40px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+ 
+  .label-npwp{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  #wafer{
+    width: 200px;
+     margin-bottom: 10px;
+     margin-left: 52px;
+     margin-right: 20px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+#waferKeju{
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    width: 300px;
+    /* margin-left: 200px;
+    padding-left: 10px; */
+}
+#waferKeju2{
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 200px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#bungkus{
+    color: #01386A;
+}
+
+   #coklat{
+    width: 200px;
+     margin-bottom: 10px;
+     margin-left: 200px;
+     margin-right: 20px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   }
+   
+   #str{
+    width: 200px;
+     margin-bottom: 10px;
+     margin-left: 200px;
+     margin-right: 20px;
+     background-color: #EAEAEA;
+     padding: 10px;
+     border-radius: 10px;
+     display: inline-block; /* Atau display: block; */
+   
+   }
+ 
+  .label-produk{
+     margin-right: 10px; /* Memberi jarak antara label dan span */
+     width: 150px; /* Lebar label yang tetap */
+     text-align: left; /* Teks rata kiri */
+  }
+  
+  
+  
+
+
+
+
+
+.simpan{
+    background-color: #01386A;
+    color: #fff;
+    margin-left: 300px;
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    /* z-index: 100; */
+    margin-top: 450px;
+    border-radius: 10px;
+  }
+  .batal{
+    background-color: #6a0101;
+    color: #fff;
+    margin-left: 400px;
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    /* z-index: 100; */
+    margin-top: 450px;
+    border-radius: 10px;
+  }
+  
+
+  .input-group label {
+    display: inline-block;
+    width: 150px; /* Lebar label yang konsisten */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-group span {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.input-group .edit-input {
+    width: calc(100% - 160px); /* Sesuaikan lebar input */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    vertical-align: middle;
+}
+
+#editButton, #saveButton, #cancelButton {
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#editButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#saveButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#cancelButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+
+.info-group {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto; /* Pusatkan div */
+}
+
+.info-group label {
+  display: inline-block;
+  width: 150px; /* Lebar tetap untuk label */
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+  vertical-align: top; /* Sejajarkan label ke atas jika nilai panjang */
+}
+
+.info-group span,
+.info-group div#productDisplayArea_view p { /* Menargetkan span dan paragraf di area produk */
+  display: inline-block;
+  width: calc(100% - 160px); /* Sisa lebar setelah label */
+  margin-bottom: 15px;
+  padding: 5px 0; /* Sedikit padding vertikal */
+  border-bottom: 1px dashed #eee; /* Garis bawah tipis untuk pemisah */
+  vertical-align: top; /* Sejajarkan nilai ke atas */
+}
+
+/* Hapus garis bawah untuk item terakhir dari setiap baris data */
+.info-group span:last-of-type,
+.info-group div#productDisplayArea_view p:last-of-type {
+  border-bottom: none;
+}
+
+/* CSS Khusus untuk area produk (productDisplayArea_view) */
+div#productDisplayArea_view {
+  display: block; /* Produk akan ditampilkan sebagai blok */
+  width: calc(100% - 160px); /* Ikuti lebar span lainnya */
+  margin-left: 150px; /* Sejajarkan dengan nilai span lain */
+  margin-top: -15px; /* Sesuaikan margin untuk tampilan yang lebih baik */
+  padding-bottom: 0; /* Hapus padding bawah default */
+  border-bottom: none; /* Hapus border bawah default */
+}
+
+div#productDisplayArea_view p {
+  display: block; /* Setiap produk sebagai paragraf di baris baru */
+  margin: 0 0 5px 0; /* Margin antar produk */
+  padding: 2px 0;
+  border-bottom: 1px dotted #ddd; /* Garis pemisah antar produk */
+  width: 100%; /* Agar mengisi lebar parentnya */
+}
+
+div#productDisplayArea_view p:last-child {
+  border-bottom: none; /* Hapus garis bawah produk terakhir */
+}
+
+
+.info-group button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  display: block; /* Agar tombol berada di baris baru dan menempati lebar penuh */
+  width: fit-content; /* Sesuaikan lebar dengan konten */
+  margin-left: auto; /* Untuk menengahkan tombol jika perlu */
+  margin-right: auto;
+  transition: background-color 0.3s ease;
+}
+
+.info-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Anda bisa menambahkan media queries untuk responsivitas jika diperlukan */
+@media (max-width: 600px) {
+  .info-group label,
+  .info-group span,
+  .info-group div#productDisplayArea_view {
+      width: 100%; /* Penuh lebar di layar kecil */
+      display: block;
+      margin-left: 0;
+  }
+  .info-group label {
+      margin-bottom: 5px;
+  }
+  .info-group span,
+  .info-group div#productDisplayArea_view p {
+      padding-left: 0;
+  }
+}

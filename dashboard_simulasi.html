@@ -1,0 +1,101 @@
+<html>
+  <head><title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard_simulasi.css">
+  </head>
+<body>
+  <div class="logo">
+    <ul class="logo-i">
+      <li> <img src="icon/logo_cross-removebg-preview.png" alt="img"></li>
+      <li> <img src="icon/pexels-moose-photos-170195-1586996.jpg" id="ic">  
+        <ul class="dropdown-logo">
+          <li class="li-logo"><a href="Dashboard.html" >Logout</a></li>
+          </ul>
+      </li>
+    </ul>
+    
+  </div>
+
+  <div class="navbar">
+    <ul class="ul-navbar">
+      <li class="li-navbar"> 
+        <a href="dashboard_pengajar.html" class="dasboard"> Dashboard</a> 
+      </li>
+      <li class="li-navbar"> 
+        <a class="produk" href="dashboard_simulasi.html"> Simulasi </a>
+      </li>
+      <li class="li-navbar"> 
+        <a class="Harga" href="dashboard_report.html"> Report</a>
+      </li>
+      <li class="li-navbar">
+        <a class="isi-tex" href="dashboard_modul.html">Modul</a>
+      </li>
+      <li class="li-navbar"> 
+        <a class="isi-ingintahu" href="dashboard_setting.html"> Setting </a>
+      </li>
+    
+     
+    </ul>
+  </div>
+
+ <!-- Konten Utama: Buat Simulasi Code dan Tombol -->
+ <div class="isi">
+  <h2 class="pilih">Buat Simulasi Code</h2>
+  <!-- Tombol untuk memicu ID & Kata Sandi -->
+  <button id="generateButton"
+          class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition transform duration-200 hover:scale-105">
+      Buat Kode Simulasi Baru
+  </button>
+
+
+<!-- Kontainer Tabel -->
+<div class="table-container">
+  <table class="table" border="1">
+      <thead>
+          <tr>
+              <th class="tanggal_main">Tanggal</th>
+              <th class="waktu_main">Waktu</th>
+              <th class="kode_main">Kode Main</th>
+              <th class="pw_main">Password Main</th>
+              <th class="nama_tim">Nama Tim</th>
+              <th class="keterangan">Keterangan</th>
+          </tr>
+      </thead>
+      <tbody id="simulationTableBody">
+          <!-- Data tabel akan ditambahkan di sini secara dinamis jika ada -->
+      </tbody>
+  </table>
+</div>
+
+<!-- Modal untuk menampilkan ID dan Kata Sandi -->
+<div id="idPasswordModal" class="modal-overlay hidden">
+  <div class="modal-content">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">ID & Kata Sandi Anda</h2>
+      <div class="mb-4">
+          <p class="text-gray-700 text-lg font-medium">ID:</p>
+          <div class="flex items-center justify-center bg-gray-100 p-2 rounded-md border border-gray-200">
+              <span id="displayId" class="font-mono text-gray-900 break-all"></span>
+              <button class="copy-button" onclick="copyToClipboard('displayId', 'ID')">Salin</button>
+          </div>
+      </div>
+      <div class="mb-6">
+          <p class="text-gray-700 text-lg font-medium">Kata Sandi:</p>
+          <div class="flex items-center justify-center bg-gray-100 p-2 rounded-md border border-gray-200">
+              <span id="displayPassword" class="font-mono text-gray-900 break-all"></span>
+              <button class="copy-button" onclick="copyToClipboard('displayPassword', 'Kata Sandi')">Salin</button>
+          </div>
+      </div>
+      <button id="closeModalButton"
+              class="px-5 py-2 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600 transition duration-200">
+          Tutup
+      </button>
+  </div>
+</div>
+
+<!-- Message box for copy confirmation -->
+<div id="messageBox" class="message-box"></div>
+</div>
+
+
+<script src="dashboard_simulasi.js"></script>
+</body>
+</html>
